@@ -1,0 +1,30 @@
+
+以下程序调用fun 函数后输出数组中最大值及对应元素的下标。
+#include <stdio.h>
+void fun(int *s, int n, int *k) {
+    int i;
+    for (i = 0, *k = i; i < n; i++)
+        if (s[i] > s[*k])
+            ________;
+}
+ 
+int main() {
+    int a[5] = {1, 6, 2, 8, 0}, k;
+    fun(a, 5, &k);
+    printf("%d %d＼n", k, a[k]);
+}
+
+
+在横线处应填入的内容是?
+
+A
+*k = i
+B
+k = i
+C
+*k = i - s
+D
+k = i - s
+
+答案A
+记住，第一个元素只执行一次
